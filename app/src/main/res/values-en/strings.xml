@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GithubUserApp:</string>
+    <string name="example_user">Username:</string>
+    <string name="following">following:</string>
+    <string name="follower">follower:</string>
+    <string name="repo">total repository:</string>
+    <string name="location">location:</string>
+    <string name="company">company:</string>
+    <string name="name">name:</string>
+    <string name="username">username:</string>
+
+    <string name="this_activity">this is menu activity</string>
+    <string name="this_fragment">this is menu fragment</string>
+    <string name="search">Search</string>
+    <string name="menu_1">Menu1</string>
+    <string name="menu_2">Change Languange</string>
+
+    <string name="search_hint">Input Word</string>
+
+    <string name="tab_text_1">Follower</string>
+    <string name="tab_text_2">Following</string>
+
+    <string name="progress">Loading…</string>
+    <string name="user_pilih">you are choosing user</string>
+
+    <string name="ContentTittleNotif">Check App</string>\
+    <string name="SubTextNotif">Lets see the list of github users</string>
+    <string name="menu_reminder_detail">Get a notification to open the app every 9 AM</string>
+    <string name="notification_reminder">Notification Reminder</string>
+    <string name="con_bar">Remainder running app</string>
+    <string name="active">Notification Activated</string>
+    <string name="deactive">Notification Deactivated</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

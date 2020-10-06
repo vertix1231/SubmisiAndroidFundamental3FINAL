@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:id="@+id/detailuser">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="315dp"
+
+        android:id="@+id/tldetailprofil"></com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vpdetailprofil"
+        android:layout_below="@+id/tldetailprofil"
+        ></androidx.viewpager.widget.ViewPager>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivImagedetail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+        android:id="@+id/btn_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        app:mfb_animate_favorite="true"
+        android:layout_below="@id/ivImagedetail"
+        android:layout_centerHorizontal="true"
+        app:mfb_type="heart" />
+
+    <TextView
+        android:id="@+id/name_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/name"
+        android:layout_below="@+id/btn_fav"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/username_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/name_detail_tv"
+        android:layout_centerHorizontal="true"
+        android:text="@string/username"
+         />
+
+    <TextView
+        android:id="@+id/location_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/username_detail_tv"
+        android:text="@string/location"/>
+
+
+
+    <TextView
+        android:id="@+id/company_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/location_detail_tv"
+        android:layout_centerHorizontal="true"
+        android:text="@string/company" />
+
+    <TextView
+        android:id="@+id/repository_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/company_detail_tv"
+        android:text="@string/repo"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
